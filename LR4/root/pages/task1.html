@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лабораторная работа №4">
+    <meta name="author" content="korshikov_pie_33_0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Задание 1</title>
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <script src="../js/task1.js"></script>
+    <div class="container">
+        <header>
+            <h1>Лабораторная работа №4</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="task1.html">Задание 1</a></li>
+                    <li><a href="task2.html">Задание 2</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Задание 1</h1>
+            <p>Дано целое число N и набор из N целых чисел. Вывести в том же порядке все четные числа из данного набора и количество K таких чисел.</p>
+            <br>
+            <form>
+                N = <input id="input" type="number" placeholder="Введите N" min="1" step="1">
+                <button onClick="onButtonClick();" type="button">Выполнить</button>
+                <br><br>
+                <textarea id="result" placeholder="Результат" readonly></textarea>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Коршиков Иван ПИЭ-33</p>
+        </footer>
+    </div>
+</body>
+</html>

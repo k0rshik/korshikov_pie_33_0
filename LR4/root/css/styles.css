@@ -1,0 +1,113 @@
+:root {
+    --main-bg-color: #fff;
+    --secondary-bg-color: #f6f6f6;
+    --main-text-color: #444;
+    --secondary-text-color: #ccc;
+    --main-accent-color: #98b880;
+    --secondary-accent-color: #d2e6c4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: var(--secondary-bg-color);
+}
+
+header, main, footer {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+header, footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 1100px;
+    overflow: hidden;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+header h1 {
+    color: #6a635a;
+}
+
+nav ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background: var(--main-accent-color);
+}
+
+nav li {
+    padding: 5px 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--secondary-accent-color);
+}
+
+form {
+    background: var(--secondary-bg-color);
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 0.125rem;
+}
+
+input, button {
+    padding: 5px;
+    margin: 5px 0;
+    border: 3px solid var(--secondary-text-color);
+    border-radius: 0;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+input:focus, button:active {
+    border-color: var(--main-text-color);
+}
+
+button:hover {
+    background: var(--secondary-bg-color);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--secondary-text-color);
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 7px;
+    padding: 5px;
+    color: var(--main-text-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
