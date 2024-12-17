@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Лабораторная работа №6">
+    <meta name="description" content="Лабораторная работа №7">
     <meta name="author" content="korshikov_pie_33_0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-    <title>Лабораторная работа №6</title>
+    <title>Лабораторная работа №7</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
 <body class="page">
     <header class="page__header">
-        <h1 class="header__title">Лабораторная работа №6</h1>
+        <h1 class="header__title">Лабораторная работа №7</h1>
         <nav class="menu">
-            <a href="pages/task_1.html" class="menu__link">Задание 1</a>
-            <a href="index.html" class="menu__link  menu__link_active">Главная</a>
-            <a href="pages/task_2.html" class="menu__link">Задание 2</a>
+            <a href="index.html" class="menu__link">Главная</a>
         </nav>
     </header>
-
     <main class="page__main">
-        <h1 class="main__title">Лабораторная работа №6</h1>
-        <h2>Цель работы:</h2> 
-        <p>Изучение способов передачи параметров, описания и вызова функций. Написание и отладка программы, содержащей функции.</p>
+        <h1 class="main__title">Магазинчик</h1>
         <br>
-        <h3>Задание 1:</h3>
-        <p>Написать  функцию  f(a,b),  вычисляющую  и  возвращающую  длину средней линии трапеции по заданным длинам оснований a и b</p>
-        <br>
-        <h3>Задание 2:</h3>
-        <p>Для  любого  задания  лабораторных  работ №5  и  №6  реализовать  ввод, формирование/обработку и вывод массивов с применением функций.</p>
-        <p>Дан массив A размера N. Сформировать новый массив B того же размера по следующему правилу: элемент BK равен среднему арифметическому элементов массива A с номерами от 1 до K.</p>
-
-        
+        <div class="shop" id="shop">
+            <template id="product">
+                <div class="product">
+                    <p class="product__title">Название</p>
+                    <p class="product__category">Категория</p>
+                    <div class="image_holder"><img class="product__image" src="assets/images/cart.webp"></div>
+                    <p class="product__price">0.0$</p>
+                </div>
+            </template>
+        </div>
+        <div class="nav">
+            <button type="button" class="task__button" onclick="updatePage(-1)">&lt; Назад</button>
+            <span class="nav__page_number" id="page_number">1</span>
+            <button type="button" class="task__button" onclick="updatePage(1)">Вперёд &gt;</button>
+        </div>
     </main>
     <footer class="page__footer">
         <p>&copy; 2024 Коршиков Иван ПИЭ-33</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
